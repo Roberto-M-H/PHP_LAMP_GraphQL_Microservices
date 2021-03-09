@@ -1,4 +1,4 @@
-# pho-lib-graphql-parser
+# php-lib-graphql-parser
 
 A general purpose GraphQL schema parser library in PHP. This library does **not** parse GraphQL queries or responses.
 
