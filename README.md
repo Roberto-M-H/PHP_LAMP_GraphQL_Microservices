@@ -5,7 +5,7 @@ A general purpose GraphQL schema parser library in PHP. This library does **not*
 
 ## Installation
 
-The recommended way to install pho-lib-graphql-parser is [through composer](https://getcomposer.org/). It's as simple as:
+The recommended way to install pho-lib-graphql-parser is through Composer. It's as simple as:
 
 ```bash
 composer require phonetworks/pho-lib-graphql-parser
@@ -50,15 +50,11 @@ in the pure PHP mode.
 
 For multiple inheritance, the following dependencies must be met before installing pho-lib-graphql-parser. Please note, the patches shown must be applied since schema support is still experimental.
 
-1. The [LibGraphQLParser](https://github.com/graphql/libgraphqlparser) library by Facebook. Make sure the experimental schema support is enabled with this [patch](https://github.com/graphql/libgraphqlparser/pull/49/files).
-2. The [graphql-parser-php](https://github.com/dosten/graphql-parser-php) PHP extension. Make sure the experimental schema support is enabled with this [patch](https://github.com/dosten/graphql-parser-php/pull/4/commits/63d9108567a81d4777f031044dbaf65017d7a139).
+1. The LibGraphQLParser library by Facebook. Make sure the experimental schema support is enabled with this patch.
+2. The graphql-parser-php PHP extension. Make sure the experimental schema support is enabled with this patch.
 
 To enable it in the library side, you need to set an environment variable where this program is run as follows:
 
 `LIBGRAPHQL_ON=true`
 
 Once you do that, you may test multiple inheritance by commenting out "return" statements in the tests/SchemaWithMultipleInheritanceTest.php file.
-
-## License
-
-Released under the terms of the permissive [MIT license](http://opensource.org/licenses/MIT).
